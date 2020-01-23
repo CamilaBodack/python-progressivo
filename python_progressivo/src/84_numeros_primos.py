@@ -11,7 +11,3 @@ if verifica == 0:
 
     print("O número",num,"é primo")
 
-
-
-
-
