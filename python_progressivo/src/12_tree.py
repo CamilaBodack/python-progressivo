@@ -1,0 +1,9 @@
+print("                  +                   ",'\n'
+      "                 xxx                  ",'\n'
+      "                xxoxx                 ",'\n'
+      "               oxxxxcx                ",'\n'
+      "              xxjxxjxxx               ",'\n'
+      "             xxxxxxxxxxx              ",'\n'
+      "                 ##                   ",'\n'
+      "                 ##                   ",'\n'
+      "                ####                  ")
