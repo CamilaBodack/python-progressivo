@@ -13,4 +13,4 @@ for i in range(eleitores):
     elif voto == 3:
         candidato_3 = candidato_3 + 1
 
-print("Votos: Clóvis:",candidato_1,"Nícolas:", candidato_2,"Ryuk:", candidato_3)
+print("Votos: Clóvis:",candidato_1,"Nícolas:",candidato_2,"Ryuk:",candidato_3)
