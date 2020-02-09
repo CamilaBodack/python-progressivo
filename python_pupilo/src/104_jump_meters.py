@@ -4,9 +4,9 @@ maiores_saltos = 0
 melhor_atleta = 0
 total_saltos = 0
 
-for i in range(2):
+for i in range(5):
     atleta = input("Nome do atleta:")
-    for z in range(2):
+    for z in range(5):
         salto = float(input("Distância do salto (metros):"))
         total_saltos = total_saltos + salto
         z += 1
