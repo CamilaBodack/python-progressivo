@@ -1,6 +1,5 @@
 def fibonacci():
     num = int(input("Insert number:"))
-    i = 0
     last = 0
     penult = 1
     antepenult = 1
@@ -12,7 +11,6 @@ def fibonacci():
             penult = antepenult
             antepenult = last
             print(last)
-            i += 1
         else:
             break
 
