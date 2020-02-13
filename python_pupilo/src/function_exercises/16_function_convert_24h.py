@@ -29,18 +29,15 @@ def convert_24h():
         elif hour == 24:
             hour == 0
         print(hour, ":", min, am_pm())
+        return hour, ":", min, am_pm()
 
 
 def am_pm():
-    AM = 'A'
-    PM = 'B'
     am_or_pm = input("AM or PM?")
-    if am_or_pm == AM:
-        return 'A'
-    elif am_or_pm == PM:
-        return 'B'
-    else:
-        exit
+    if am_or_pm == 'AM':
+        return 'AM'
+    elif am_or_pm == 'PM':
+        return 'PM'
 
 
 convert_24h()
