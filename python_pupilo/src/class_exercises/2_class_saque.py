@@ -1,4 +1,4 @@
-class Conta:
+class Conta():
     saldo = 0.0
 
     def __init__(self):
@@ -18,7 +18,8 @@ class Conta:
 
     def saldos(self):
         return self.saldo
-
+dic = []
+dic 2 = dic
 
 nova_conta = Conta()
 
