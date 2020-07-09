@@ -12,16 +12,16 @@ Com list compreehension:
 '''
 
 
-def pares(num):
+def pares():
     pares = [num for num in range(10) if (num % 2 == 0)]
     return pares
 
 
-def impar(num):
+def impar():
     impar = [num for num in range(10) if (num % 2 != 0)]
     return impar
 
 
-def impar_cem(num):
+def impar_cem():
     impar_ate_cem = [numero for numero in range(101) if (numero % 2 != 0)]
-    return impar_cem
+    return impar_ate_cem
