@@ -11,15 +11,32 @@ class Pilha:
         return self.pilha.append(dados)
 
     def remove(self):
-        return self.pilha.pop()
+        if not self.isEmpty():
+            return self.pilha.pop()
+        else:
+            return None
 
     def topo(self):
-        return self.pilha[-1]
+        if not self.isEmpty():
+            return self.pilha[-1]
+        else:
+            return None
+
+    def pilha_inteira(self):
+        return self.pilha
+
+    def isEmpty(self):
+        if (len(self.pilha) == 0):
+            return True
+        else:
+            return False
 
 
 nova_pilha = Pilha()
 nova_pilha.insere(1)
 nova_pilha.insere(2)
 nova_pilha.insere(3)
-nova_pilha.remove()
+nova_pilha.insere(1)
+nova_pilha.insere(3)
+nova_pilha.insere(2)
 print(nova_pilha.topo())
