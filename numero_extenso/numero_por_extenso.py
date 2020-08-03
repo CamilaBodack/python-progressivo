@@ -85,4 +85,4 @@ def verifica_unidade(unidade):
 
 
 verifica_milhar(milhar), verifica_centena(centena), verifica_dezena(dezena),
-verifica_unidade(unidade)
+verifica_unidade(unidade), verifica_faixa_dezena(verifica_dezena)
