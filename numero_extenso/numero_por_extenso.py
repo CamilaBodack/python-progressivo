@@ -37,27 +37,27 @@ def verifica_milhar(milhar):
 
 
 def verifica_centena(centena):
-    centenas = ["cem", "duzentos", "trezentos", "quatrocentos", "quinhentos",
-                "seissentos", "setessentos", "oitocentos", "novecentos", None]
+    centenas = [None, "cem", "duzentos", "trezentos", "quatrocentos",
+                "quinhentos", "seissentos", "setessentos", "oitocentos",
+                "novecentos"]
     return centenas[centena]
 
 
 def verifica_faixa_dezena(faixa_dezena, dezena):
     if (faixa_dezena > 10 and faixa_dezena < 20):
         posicao = int(faixa_dezena % 10)
-        dezena_inicial = ["onze", "doze", "treze", "quatorze", "quinze",
-                          "dezesseis", "desessete", "dezoito", "dezenove",
-                          None]
+        dezena_inicial = [None, "onze", "doze", "treze", "quatorze", "quinze",
+                          "dezesseis", "desessete", "dezoito", "dezenove"]
         return dezena_inicial[posicao]
     else:
-        dezenas = ["dez", "vinte", "trinta", "quarenta", "cinquenta",
-                   "sessenta", "setenta", "oitenta", "noventa", None]
+        dezenas = [None, "dez", "vinte", "trinta", "quarenta", "cinquenta",
+                   "sessenta", "setenta", "oitenta", "noventa"]
         return dezenas[dezena]
 
 
 def verifica_unidade(unidade):
-    unidades = ["um", "dois", "três", "quatro", "cinco", "seis", "sete",
-                "oito", "nove", None]
+    unidades = [None, "um", "dois", "três", "quatro", "cinco", "seis", "sete",
+                "oito", "nove"]
     return unidades[unidade]
 
 
@@ -65,3 +65,4 @@ print(verifica_milhar(milhar))
 print(verifica_centena(centena))
 print(verifica_faixa_dezena(faixa_dezena, dezena))
 print(verifica_unidade(unidade))
+
