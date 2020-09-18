@@ -85,3 +85,22 @@ class LinkedList:
 
 				if flag_remove:
 					self.len_list -= 1
+
+
+		def empty(self):
+			if self.first == None:
+				return True
+			return False
+
+		def length(self):
+			return self.len_list
+
+		def show(self):
+			curr_node = self.first
+
+		while curr_node != None:
+			print(curr_node.getLabel(), end=' ')
+			curr_node = curr_node.getNext()
+		print('')
+
+lista = LinkedList()
