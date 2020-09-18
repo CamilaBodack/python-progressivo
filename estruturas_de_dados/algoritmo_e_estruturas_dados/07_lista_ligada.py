@@ -54,4 +54,34 @@ class LinkedList:
 						curr_node = curr_node.getNext()
 						curr_index += 1
 
-					self.len_list += 1 # finaliza atualizano tamanho da lista
+			self.len_list += 1 # finaliza atualizano tamanho da lista
+
+		def pop(self, index):
+			if not self.empty() and index >= 0 and index < self.len_list:
+				flag_remove = False
+
+				if self.first.getNext() == None:
+					self.first = None
+					self.last = None
+					flag_remove = True
+				elif index == 0:
+					self.first = self.first.getNext()
+					flag_remove = True
+				else:
+					prev_node = self.first
+					curr_node = self.first.getNext()
+					curr_index += 1
+
+					while curr_node != None:
+						if index == curr_node:
+							prev_node.setNext(curr_node.getNext())
+							curr_node.setNext(None)
+							flag_remove = True
+							break
+
+						prev_node = curr_node
+						curr_node = curr_node.getNext()
+						curr_index += 1
+
+				if flag_remove:
+					self.len_list -= 1
